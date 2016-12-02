@@ -1,0 +1,12 @@
+piVersion: v1
+kind: ResourceQuota
+metadata:
+  name: object-counts
+spec:
+  hard:
+    configmaps: "20"
+    persistentvolumeclaims: "5"
+    replicationcontrollers: "60"
+    secrets: "20"
+    services: "20"
+    services.loadbalancers: "5"
